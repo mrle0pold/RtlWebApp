@@ -49,7 +49,7 @@ namespace ExternalApis
         {
             shows.ForEach(async show =>
             {
-                System.Threading.Thread.Sleep(50);
+                System.Threading.Thread.Sleep(200);
                 show.Cast = await RetrieveAndMapCast(show);
             });
             return shows;
